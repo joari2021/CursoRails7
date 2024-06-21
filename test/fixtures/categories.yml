@@ -1,7 +1,8 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+videogames:
+  name: Videojuegos
 
-one:
-  name: MyString
+computers:
+  name: Informática
 
-two:
-  name: MyString
+clothes:
+  name: Ropa
