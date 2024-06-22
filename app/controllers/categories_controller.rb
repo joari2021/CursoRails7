@@ -8,6 +8,7 @@ class CategoriesController < ApplicationController
   end
 
   def edit
+    category
   end
 
   def create

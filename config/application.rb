@@ -29,5 +29,8 @@ module AppCurso
 
     #lenguage by default
     config.i18n.default_locale = :es
+
+    # Allow multiquery. Ejecutar consultas de base datos a la vez para ahorrar tiempo de carga
+    config.active_record.async_query_executor = :global_thread_pool
   end
 end
