@@ -1,4 +1,6 @@
-<%= image_tag @product.photo, width: 400 if @product.photo.attached?%>
+<div>
+  <%= image_tag @product.photo, width: 400 if @product.photo.attached?%>
+</div>
 <h1 class="title"><%=@product.title%></h1>
 <p class="description"><%=@product.description%></p>
 <span class="price"><%=@product.price%>$</span>
