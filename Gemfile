@@ -43,6 +43,8 @@ gem "bootsnap", require: false
 
 # Postgresql fulltextsearch
 gem "pg_search", "~> 2.3"
+# Paginacion
+gem "pagy", "~> 8.4"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -65,5 +67,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
 
 
