@@ -4,7 +4,6 @@ class UserMailer < ApplicationMailer
   # with the following lookup:
   #
   #   en.user_mailer.welcome.subject
-  #
   def welcome
     @user = params[:user]
     @username = @user.username
