@@ -43,11 +43,18 @@ gem "bootsnap", require: false
 
 # Postgresql fulltextsearch
 gem "pg_search", "~> 2.3"
+
 # Paginacion
 gem "pagy", "~> 8.4"
 
 # Tailwind CSS (hay que instalar la gema foreman para poder ejecutar bin/dev - el nombre esta en el archivo bin)
 gem "tailwindcss-rails", "~> 2.6"
+
+# Background Jobs
+gem "sidekiq", "<6"#"~> 7.3"
+# sudo apt install redis
+# sudo systemctl start redis-server
+# bundle exec sidekiq
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -73,3 +80,5 @@ group :test do
   gem "webmock"
 end
 gem "view_component", "~> 3.12"
+
+
