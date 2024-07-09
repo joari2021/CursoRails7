@@ -56,6 +56,11 @@ gem "sidekiq", "<7"#"~> 7.3"
 # sudo systemctl start redis-server
 # bundle exec sidekiq
 
+# Instalacion de Fly.io
+# curl -L https://fly.io/install.sh | sh
+#export FLYCTL_INSTALL="/home/<your-username>/.fly"
+#export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
