@@ -77,4 +77,7 @@ Rails.application.configure do
   # Letter Opener
   config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.perform_deliveries = true
+
+  # Codigo adicional para configurar la url base para los turbo streams (solucion al romper imagen de vista show al ejecutarse la conexion con action cable)
+  config.action_controller.default_url_options = { host: 'localhost', port: 3000 }
 end
