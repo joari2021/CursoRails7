@@ -51,7 +51,7 @@ gem "pagy", "~> 8.4"
 gem "tailwindcss-rails", "~> 2.6"
 
 # Background Jobs
-gem "sidekiq", "<6"#"~> 7.3"
+gem "sidekiq", "<7"#"~> 7.3"
 # sudo apt install redis
 # sudo systemctl start redis-server
 # bundle exec sidekiq
